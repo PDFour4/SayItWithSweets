@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel = "stylesheet" href = "../static/style.css">
+    <script defer src = "../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name = "author" content="Say It With Sweets">
+    <meta name = "keywords" content = "Say It With Sweets, webpage">
+    <meta name = "description" content = "Say It With Sweets store website">
+    <title>Say It With Sweets</title>
+</head>
+<body>
+    <div class = "header">
+        <h1>Say It With Sweets</h1>
+    </div>
+
+    <div class = "navbar">
+        <nav>
+            <a href = "../index.html">Home</a>
+            <!-- Took some inspiration from https://www.w3schools.com/css/css_dropdowns.asp -->
+            <div class="dropdown">
+                <button class="dropBtn">Products</button>
+                <div class="dropdown-content">
+                    <a href = "products.html">All Products</a>
+                    <a href = "cakes.html">Cakes</a>
+                    <a href = "cupcakes.html">Cupcakes</a>
+                    <a href = "cookies.html">Cookies</a>
+                    <a href = "holidays.html">Holidays/Celebrations</a>
+                </div>
+            </div>
+
+            <a href = "contact.html">Contact</a>
+            
+        </nav>
+    </div>
+    <div class = "contact">
+        <h2 id = "contactHeader">Join Our Mailing List!</h2>
+        <form method="POST" action = "mailto:info@sayitwithsweets.com" enctype="multipart/form-data">
+                <label id = "request" for="UserName">Your name (required): </label>
+     
+                <input type = "text" name = "UserName" id = "UserName" required>
+     
+                <label id = "request" for = "UserEmail">Your email (required): </label>
+     
+                <input type = "email" name = "UserEmail" id = "UserEmail" required>
+
+                <label id = "request" for = "myCheck">Would you like to receive messages via SMS text:</label> 
+
+                <input type = "checkbox" id = "myCheck">
+
+                <div class="reveal-if-active">
+                    <label id = "request" for = "UserMobileNumber">Your Phone Number (optional):</label>
+                    <input type = "number" name = "UserMobileNumber" id = "UserMobileNumber">
+                </div>
+
+                <lable id = "request" for = "UserZipCode">Your Zip Code (optional):</lable>
+
+                <input type = "number" minlength = "5" name="UserZipCode" id = "UserZipCode">
+     
+                <input id = "SubmitBTN" type = "submit" value = "SEND" onclick = "validate()">
+            <p id = "ValidateMsg"></p>
+        </form>
+        <h2 id = "otherInfo">Other Relevant Info</h2>
+        <table>
+            <tr><th>Contact Information</th><th>Description</th></tr>
+            <tr><td>Address</td><td>1307 Pleasant Valley Blvd. Altoona PA 16602</td></tr>
+            <tr><td>Phone</td><td>+1.8149371564</td></tr>
+            <tr><td>Email</td><td><a href = "mailto:info@sayitwithsweets.com" target = "_blank">info@sayitwithsweets.coms</a></td></tr>
+        </table>
+        <ul id = "moreInfo">
+            <p>Hours:</p>
+            <li>Monday-Friday: 10:00AM-3:00PM</li>
+            <li>Weekends: Appointment Only</li>
+            <p>All items are order only. No walk in shop</p>
+            <p>Please Call 814-937-1564 to order and prepay with a credit card</p>
+        </ul>
+        <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.6203757043886!2d-78.38948372395737!3d40.50577697142541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cb9188567d3371%3A0x79740809b421e8ac!2s1307%20Pleasant%20Valley%20Blvd%2C%20Altoona%2C%20PA%2016602!5e0!3m2!1sen!2sus!4v1712103659768!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p id = "geoPrompt">Click the button to get your coordinates<br><button id = "geolocationBtn" onclick="getLocation()">Try It</button></p>
+        <p id="demo"></p>
+    </div>
+    <footer>
+        <p id = "footer"> Say It With Sweets &copy; 2024 | 1307  Pleasant Valley Blvd. Altoona PA 16602 US | +1.8149371564</p>
+    </footer>
+</body>
+</html>

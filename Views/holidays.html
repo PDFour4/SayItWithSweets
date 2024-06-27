@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel = "stylesheet" href = "../static/style.css">
+    <script defer src = "../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name = "author" content="Say It With Sweets">
+    <meta name = "keywords" content = "Say It With Sweets, webpage">
+    <meta name = "description" content = "Say It With Sweets store website">
+    <title>Say It With Sweets</title>
+</head>
+<body>
+    <div class = "header">
+        <h1>Say It With Sweets</h1>
+    </div>
+
+    <div class = "navbar">
+        <nav>
+            <a href = "../index.html">Home</a>
+            <!-- Took some inspiration from https://www.w3schools.com/css/css_dropdowns.asp -->
+            <div class="dropdown">
+                <button class="dropBtn">Products</button>
+                <div class="dropdown-content">
+                    <a href = "products.html">All Products</a>
+                    <a href = "cakes.html">Cakes</a>
+                    <a href = "cupcakes.html">Cupcakes</a>
+                    <a href = "cookies.html">Cookies</a>
+                    <a href = "holidays.html">Holidays/Celebrations</a>
+                </div>
+            </div>
+
+            <a href = "contact.html">Contact</a>
+            
+        </nav>
+    </div>
+    <!-- Got the style from https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img id = "images" src = "../static/christmasBouquet.png" alt = "Christmas Cupcake Bouquet">
+        <div class="text">CHRISTMAS CUPCAKE BOUQUET (RED OR LIGHT BLUE)<br>$28.00</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img id = "images" src="../static/christmastree.png" alt = "Christmas Tree Cupcake">
+        <div class="text">CHRISTMAS TREE CUPCAKE CREATION<br>$35.00</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img id = "images" src="../static/rudolph.png" alt = "Rudolph Cupcake Creation">
+        <div class="text">RUDOLPH CUPCAKE CREATION<br>$40.00</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <footer>
+        <p id = "footer"> Say It With Sweets &copy; 2024 | 1307  Pleasant Valley Blvd. Altoona PA 16602 US | +1.8149371564</p>
+    </footer>
+</body>
+</html>
