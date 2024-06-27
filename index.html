@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel = "stylesheet" href = "Static/style.css">
+    <script defer src = "Static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name = "author" content="Say It With Sweets">
+    <meta name = "keywords" content = "Say It With Sweets, webpage">
+    <meta name = "description" content = "Say It With Sweets store website">
+    <title>Say It With Sweets</title>
+</head>
+<body>
+    <div class = "header">
+        <h1>Say It With Sweets</h1>
+    </div>
+
+    <div class = "navbar">
+        <nav>
+            <a href = "index.html">Home</a>
+            <!-- Took some inspiration from https://www.w3schools.com/css/css_dropdowns.asp -->
+            <div class="dropdown">
+                <button class="dropBtn">Products</button>
+                <div class="dropdown-content">
+                    <a href = "Views/products.html">All Products</a>
+                    <a href = "Views/cakes.html">Cakes</a>
+                    <a href = "Views/cupcakes.html">Cupcakes</a>
+                    <a href = "Views/cookies.html">Cookies</a>
+                    <a href = "Views/holidays.html">Holidays/Celebrations</a>
+                </div>
+            </div>
+
+            <a href = "Views/contact.html">Contact</a>
+            
+        </nav>
+    </div>
+    <!-- Drew inspiration from https://www.w3schools.com/howto/howto_make_a_website.asp for the layout of the page -->
+    <div class = "row">
+        <div class = "side"> 
+            <img id = "logo" src = "Static/logo.png" alt = "logo">
+
+            <h3>Social Media and Partners Websites</h3>
+            <a href = "https://www.facebook.com/say.it.with.sweets/" target = "_blank"> <img class = "Social" src="Static/facebook.png" alt="Facebook Icon Link"></a><br>
+            <a href = "https://www.instagram.com/sayitwithsweets11/" target = "_blank"> <img class = "Social" src="Static/instagram.png" alt="Instagram Icon link"></a><br>
+            <a href = "https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html" target = "_blank"> <img class = "tripadvisor" src="Static/tripadvisor.png" alt="Tripadvisor Icon Link"></a><br>
+            <a href = "https://www.yelp.com/biz/say-it-with-sweets-altoona" target = "_blank"> <img class = "yelp" src="Static/yelp.png" alt="Yelp Icon Link"></a>
+        </div>
+        <div class = "main">
+            <video id = "video" controls>
+                <source src="Static/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            <h2>About us</h2>
+            <p id = "about">Welcome to Say it with Sweets, where every delectable creation is crafted with love and care to add a touch of sweetness to life's special moments. Nestled in the heart of Altoona, Pennsylvania, at 1307 Pleasant Valley Boulevard, Say it with Sweets has been proudly serving the community for over 12 years. <br>
+
+                At Say it with Sweets, we specialize in providing a wide array of irresistible treats for all occasions. From elegantly decorated cakes to melt-in-your-mouth cookies and whimsical cupcake creations, our bakery delights in offering something to satisfy every sweet tooth. Whether you're celebrating a birthday, wedding, anniversary, or simply craving a sweet indulgence, we have the perfect confection to make your day extra special. <br>
+                
+                What sets Say it with Sweets apart is our commitment to delivering not only delicious treats but also unique sweet gifts that are sure to leave a lasting impression. Whether you're gifting a loved one or treating yourself, our selection of sweet delights offers something truly unforgettable. <br>
+                
+                While we don't have a traditional storefront, our bakery operates by pre-ordering all baked goods with prearranged pickup. This allows us to focus on providing personalized attention to each order, ensuring that every creation meets our high standards of quality and freshness.<br>
+                
+                At Say it with Sweets, we believe that every celebration deserves a sweet touch, and we're honored to be a part of your special moments. Join us in indulging in life's sweetness, one delectable treat at a time.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p id = "footer"> Say It With Sweets &copy; 2024 | 1307  Pleasant Valley Blvd. Altoona PA 16602 US | +1.8149371564</p>
+    </footer>
+</body>
+</html>
